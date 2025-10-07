@@ -67,6 +67,12 @@ variable "auto_tune_config" {
   description = "see https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/opensearch_domain#maintenance_schedule for object structure"
 }
 
+variable "auto_software_update_enabled" {
+  description = "Whether automatic service software updates are enabled for the domain."
+  default     = false
+  type        = bool
+}
+
 ########
 # Tags #
 ########

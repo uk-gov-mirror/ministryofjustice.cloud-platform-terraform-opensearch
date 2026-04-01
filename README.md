@@ -100,6 +100,7 @@ See the [examples/](examples/) folder for more information.
 |------|-------------|------|---------|:--------:|
 | <a name="input_advanced_options"></a> [advanced\_options](#input\_advanced\_options) | Key-value string pairs to specify advanced configuration options | `map(string)` | `{}` | no |
 | <a name="input_application"></a> [application](#input\_application) | Application name | `string` | n/a | yes |
+| <a name="input_auto_software_update_enabled"></a> [auto\_software\_update\_enabled](#input\_auto\_software\_update\_enabled) | Whether automatic service software updates are enabled for the domain. | `bool` | `false` | no |
 | <a name="input_auto_tune_config"></a> [auto\_tune\_config](#input\_auto\_tune\_config) | see https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/opensearch_domain#maintenance_schedule for object structure | <pre>object({<br/>    start_at                       = string<br/>    duration_value                 = number<br/>    duration_unit                  = string<br/>    cron_expression_for_recurrence = string<br/>    rollback_on_disable            = string<br/>  })</pre> | `null` | no |
 | <a name="input_auto_tune_enabled"></a> [auto\_tune\_enabled](#input\_auto\_tune\_enabled) | Whether to enable auto-tune or not | `bool` | `true` | no |
 | <a name="input_business_unit"></a> [business\_unit](#input\_business\_unit) | Area of the MOJ responsible for the service | `string` | n/a | yes |
